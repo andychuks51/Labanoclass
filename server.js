@@ -6,11 +6,11 @@ const app = express();
 
 const port = process.env.PORT;
 
-import userRouter from "./routes/comment-routes.js";
-
+import userRouter from './routes/user-routes.js';
+import productsRouter from './routes/products-routes.js';
 
 app.use('/products', userRouter);
-app.use('/users', userRouter);
+app.use('/users', productsRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on ${port}`)
