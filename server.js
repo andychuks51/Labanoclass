@@ -9,7 +9,8 @@ const port = process.env.PORT;
 import userRouter from "./routes/comment-routes.js";
 
 
-app.use('/comments', userRouter);
+app.use('/products', userRouter);
+app.use('/users', userRouter);
 
 app.listen(port, () => {
     console.log(`Server is running on ${port}`)
